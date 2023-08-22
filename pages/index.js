@@ -53,6 +53,22 @@ export default function Calculator() {
     }
   }
 
+  const calculateLog = () => {
+    try {
+      setResult(Math.log(result).toString());
+    } catch(err) {
+      setResult("Error")
+    }
+  }
+
+  const calculateSqrt = () => {
+    try {
+      setResult(Math.sqrt(result).toString());
+    } catch(err) {
+      setResult("Error")
+    }
+  }
+
   return (
     <div>
       <div>
@@ -87,6 +103,8 @@ export default function Calculator() {
         <button onClick={calculateCos} id="cos">Cos</button>
         <button onClick={calculateTan} id="tan">Tan</button>
         <button onClick={calculatePercentage} id="percentage">%</button>
+        <button onClick={calculateLog} id="log">Log</button>
+        <button onClick={calculateSqrt} id="sqrt">Sqrt</button>
       </div>
       <div>
         <button onClick={calculate} id="result">Result</button>
@@ -94,4 +112,5 @@ export default function Calculator() {
     </div>
   )
 }
+
 
