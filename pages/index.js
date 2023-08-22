@@ -45,6 +45,14 @@ export default function Calculator() {
     }
   }
 
+  const calculatePercentage = () => {
+    try {
+      setResult((result / 100).toString());
+    } catch(err) {
+      setResult("Error")
+    }
+  }
+
   return (
     <div>
       <div>
@@ -78,6 +86,7 @@ export default function Calculator() {
         <button onClick={calculateSin} id="sin">Sin</button>
         <button onClick={calculateCos} id="cos">Cos</button>
         <button onClick={calculateTan} id="tan">Tan</button>
+        <button onClick={calculatePercentage} id="percentage">%</button>
       </div>
       <div>
         <button onClick={calculate} id="result">Result</button>
