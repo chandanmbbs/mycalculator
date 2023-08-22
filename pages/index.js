@@ -7,6 +7,8 @@ export default function Calculator() {
     setResult(result.concat(e.target.name));
   }
 
+  //checking
+
   const clear = () => {
     setResult("");
   }
