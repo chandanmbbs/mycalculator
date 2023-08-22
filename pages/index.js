@@ -71,7 +71,7 @@ export default function Calculator() {
       <div>
         <button name="." onClick={handleClick}>.</button>
         <button name="0" onClick={handleClick}>0</button>
-        <button onClick={clear} id="clear">Clear</button>
+        <button onClick={clear} id="clear">Clearrr</button>
         <button name="/" onClick={handleClick}>/</button>
       </div>
       <div>
