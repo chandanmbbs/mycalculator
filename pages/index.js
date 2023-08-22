@@ -101,7 +101,7 @@ export default function Calculator() {
       <div>
         <button onClick={calculateSin} id="sin">Sin</button>
         <button onClick={calculateCos} id="cos">Cos</button>
-        <button onClick={calculateTan} id="cot">Tan</button>
+        <button onClick={calculateTan} id="cot">Tann</button>
         <button onClick={calculatePercentage} id="percentage">%</button>
         <button onClick={calculateLog} id="log">Log</button>
         <button onClick={calculateSqrt} id="sqrt">Sqrt</button>
