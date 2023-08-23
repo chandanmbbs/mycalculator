@@ -69,22 +69,6 @@ export default function Calculator() {
     }
   }
 
-  const calculatePower = () => {
-    try {
-      setResult(Math.pow(result, 2).toString());
-    } catch(err) {
-      setResult("Error")
-    }
-  }
-
-  const calculateExp = () => {
-    try {
-      setResult(Math.exp(result).toString());
-    } catch(err) {
-      setResult("Error")
-    }
-  }
-
   return (
     <div>
       <div>
@@ -121,8 +105,6 @@ export default function Calculator() {
         <button onClick={calculatePercentage} id="percentage">%</button>
         <button onClick={calculateLog} id="log">Log</button>
         <button onClick={calculateSqrt} id="sqrt">Sqrt</button>
-        <button onClick={calculatePower} id="power">x^2</button>
-        <button onClick={calculateExp} id="exp">e^x</button>
       </div>
       <div>
         <button onClick={calculate} id="result">Result</button>
@@ -130,5 +112,7 @@ export default function Calculator() {
     </div>
   )
 }
+
+
 
 
